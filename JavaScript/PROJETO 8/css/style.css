@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Kanit;
+}
+
+body {
+    padding-bottom: 500px;
+}
+
+h2 {
+    margin-bottom: 1.6rem;
+    text-align: center;
+    color: #333;
+}
+
+#box-shadow-generator {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#controls-container,
+#preview {
+    flex: 1;
+    padding: 2rem;
+}
+
+.form-control {
+    display: flex;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    padding-left: 0.5rem;
+}
+
+.form-control label {
+    margin-bottom: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.range-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.range-input input[type="range"] {
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    background-color: #a9dce3;
+    outline: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #008970;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.reference-input {
+    display: flex;
+    align-items: center;
+}
+
+.reference-input p {
+    margin-left: 4px;
+    padding-right: 0.5rem;
+}
+
+.form-control input[type="text"] {
+    height: 20px;
+    width: 20px;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+#color-value {
+    min-width: 100px;
+    margin-right: 1rem;
+}
+
+#opacity-value {
+    margin-right: 1rem;
+}
+
+#inset {
+    align-self: start;
+    height: 20px;
+    width: 20px;
+}
+
+#box {
+    width: 100%;
+    height: 300px;
+    background-color: #e9d60a;
+}
+
+#generated-rule {
+    text-align: center;
+}
+
+#generated-rule p {
+    margin-bottom: 0.5rem;
+}
+
+#rules-area {
+    color: #fff;
+    background-color: #030e4f;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid #f49f1c;
+    padding: 1rem;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#rules-area:hover {
+    background-color: #334296;
+}
+
+#copy-instructions {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Mobile */
+
+@media(max-width: 425px) {
+
+    #box-shadow-generator {
+        flex-direction: column;
+    }
+
+    #constrols-container,
+    #preview {
+        padding: 1rem 2rem;
+    }
+
+    #box {
+        width: 60%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #generated-rule {
+        margin-top: 7rem;
+    }
+}
