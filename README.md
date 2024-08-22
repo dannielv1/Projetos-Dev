@@ -1,4 +1,4 @@
-Olá!
+Olá, aqui eu mostro meu desenvolvimento em HTML, CSS e JavaScript.
 
 <div>
   <a href="https://github.com/dannielv1">
